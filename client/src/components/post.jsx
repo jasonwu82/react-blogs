@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Post = (props) => (
-  <div>
-    This is my {props.number} th post
-  </div>
-);
+const Post = function(props) {
+  var number = props.number;
+  return (
+    <div>
+      This is my {number} th post
+    </div>
+  );
+};
 
 export default Post;
